@@ -5,6 +5,7 @@ import { join } from 'path';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { ContactModule } from './contact/contact.module';
 import { QuoteModule } from './quote/quote.module';
+import { TeamModule } from './team/team.module';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
@@ -24,6 +25,7 @@ import { QuoteModule } from './quote/quote.module';
     DatabaseModule,
     ContactModule,
     QuoteModule,
+    TeamModule,
   ],
   controllers: [AppController],
   providers: [],
